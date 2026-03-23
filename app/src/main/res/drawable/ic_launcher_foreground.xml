@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 
+         scaleX/Y: 0.8 (缩小到80%)
+         translateX: 调整为 23 (原19，增加以补偿左侧空间)
+         translateY: 调整为 26 (原24，微调以补偿顶部空间)
+         通过调整这两个值，确保图标在视觉中心
+    -->
+    <group 
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:pivotX="38"
+        android:pivotY="35"
+        android:translateX="17"
+        android:translateY="20">
+        
+        <!-- 左侧辅助装饰：NFC 感应波束 -->
+        <path
+            android:pathData="M2,15 Q-5,30 2,45"
+            android:strokeWidth="2.5"
+            android:strokeColor="#4CAF50"
+            android:strokeLineCap="round"
+            android:strokeAlpha="0.4" />
+
+        <!-- 核心 Æ 符号 -->
+        <group>
+            <!-- A 符号 -->
+            <path
+                android:fillColor="#4CAF50"
+                android:pathData="M28,5 L10,55 L18,55 L21.5,45 L38.5,45 L42,55 L50,55 L32,5 Z M30,20 L36,38 L24,38 L30,20 Z" />
+            
+            <!-- E 符号 -->
+            <path
+                android:fillColor="#03A9F4"
+                android:pathData="M38.5,5 L38.5,55 L65,55 L65,47 L47.5,47 L47.5,34 L62,34 L62,26 L47.5,26 L47.5,13 L65,13 L65,5 Z" />
+            
+            <!-- 中央连接点 -->
+            <path
+                android:fillColor="#FFFFFF"
+                android:pathData="M38.5,26 h9 v8 h-9 z" />
+        </group>
+
+        <!-- 右侧辅助装饰 -->
+        <path
+            android:pathData="M68,15 Q75,30 68,45"
+            android:strokeWidth="2.5"
+            android:strokeColor="#03A9F4"
+            android:strokeLineCap="round"
+            android:strokeAlpha="0.4" />
+
+        <!-- 底部十六进制数据刻度 -->
+        <group android:translateY="62">
+            <path
+                android:fillColor="#FFFFFF"
+                android:fillAlpha="0.7"
+                android:pathData="M5,0 h6 v3 h-6 z M15,0 h6 v3 h-6 z M25,0 h6 v3 h-6 z M35,0 h6 v3 h-6 z M45,0 h6 v3 h-6 z M55,0 h6 v3 h-6 z" />
+            <path
+                android:fillColor="#03A9F4"
+                android:pathData="M64,-2 L70,4 L64,10 Z" />
+        </group>
+        
+    </group>
+
+</vector>

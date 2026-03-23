@@ -1,0 +1,76 @@
+# --- Android / Gradle ---
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+*.apk
+*.ap_
+*.dex
+*.class
+
+# --- IDE (IntelliJ, Android Studio, VS Code) ---
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.history/
+cmake-build-*/
+out/
+
+# --- Python & Chaquopy ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.venv/
+venv/
+env/
+# Chaquopy 编译产物
+app/src/main/python/*.pyc
+
+# --- Security (极其重要！防止私钥泄露) ---
+*.jks
+*.keystore
+keystore.properties
+google-services.json
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Build Artifacts & Binaries ---
+dist/
+*.o
+*.obj
+*.a
+*.lib
+*.elf
+*.exe
+*.dll
+*.dylib
+# AEFS 导出或备份文件（防止误提交个人数据）
+*.bin
+*.img
+*.iso
+*.qcow2
+*.rom
+
+# --- Temporary Files ---
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+*.log
+*.out
+.env
+.env.local
+
+# --- Project Specific (Aethelc) ---
+aethelc
+*.ll

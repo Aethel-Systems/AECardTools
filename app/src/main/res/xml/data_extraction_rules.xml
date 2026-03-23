@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 数据提取规则 - 本地设备仅备份 -->
+<data-extraction-rules>
+    <device-transfer>
+        <!-- 仅保留应用配置，其他数据不备份 -->
+        <include domain="sharedpref" path="aecardtools_prefs.xml" />
+    </device-transfer>
+</data-extraction-rules>
