@@ -20,7 +20,7 @@
 
 Traditional NFC read/write tools merely treat cards as a series of linearly arranged raw bytes, lacking robustness, consistency protection, and semantic management.
 
-**AECardTools redefines the essence of NFC storage.** At its core is **AEFS (AethelOS Encrypted File System)**—which is not just a file system, but a complete set of **Sovereign Storage Protocols**.
+**AECardTools redefines the essence of NFC storage.** At its core is **AEFS (Aethel File System)**—which is not just a file system, but a complete set of **Sovereign Storage Protocols**.
 
 Our goal is to evolve cheap, ubiquitous, yet fragile NFC chips (such as MIFARE Classic, Ultralight, NTAG) into **high-strength, tamper-resistant encrypted storage nodes with atomic transaction guarantees**. As the official reference terminal for the AEFS protocol, AECardTools provides users with an experience similar to managing a physical card like a modern operating system, ensuring that data maintains absolute sovereignty and integrity amidst physical-level chaos.
 
